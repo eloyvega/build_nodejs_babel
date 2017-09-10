@@ -1,0 +1,17 @@
+{
+  "name": "build_nodejs_babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run babel-node -- ./index.js",
+    "babel-node": "babel-node --ignore='node_modules'",
+    "build": "babel . --out-dir dist --ignore node_modules,.git,.gitignore --source-maps --copy-files"
+  },
+  "devDependencies": {
+    "babel-cli": "6.14.0",
+    "babel-preset-es2015": "6.14.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
